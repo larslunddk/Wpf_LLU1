@@ -145,6 +145,8 @@ namespace Wpf_LLU1
             wrdRng = oDoc.Bookmarks.get_Item(ref oEndOfDoc).Range;
             wrdRng.InsertParagraphAfter();
             wrdRng.InsertAfter("THE END.");
+
+            oDoc.SaveAs2(@"c:\temp\MyNewWorddoc.docx");
         }
         
 
